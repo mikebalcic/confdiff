@@ -112,6 +112,15 @@ YAML 那一栏是**故意做窄**的。完整的 YAML 解析要引第三方库�
 python test_confdiff.py
 ```
 
+---
+
+## 关于作者
+
+mikebalcic 专注配置与变更管理。这个工具的判断标准是：一条 diff 值得你看，是因为它改变了行为，不是因为它改变了字符。
+
+- 个人主页：<https://mikebalcic.github.io>
+- 仓库：<https://github.com/mikebalcic/confdiff>
+
 ## 许可
 
 MIT，见 [LICENSE](LICENSE)。
