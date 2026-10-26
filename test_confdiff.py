@@ -8,7 +8,10 @@ SCRIPT = HERE / "confdiff.py"
 
 
 def run(*args):
-    return subprocess.run([sys.executable, str(SCRIPT), *args], capture_output=True, text=True)
+    # 显式指定 encoding：中文 Windows 的默认编码是 GBK，
+    # 而子进程输出的是 UTF-8，text=True 不指定编码会解码失败。
+    return subprocess.run([sys.executable, str(SCRIPT), *args], capture_output=True,
+                          text=True, encoding="utf-8", errors="replace")
 
 
 def test_json_diff():

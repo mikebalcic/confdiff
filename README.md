@@ -9,6 +9,23 @@
 - 单文件运行，输出可直接贴进 PR 评论
 - 不联网、不修改任何文件
 
+<!-- ipos:install -->
+## 安装
+
+零依赖，Python 3.10+ 即可：
+
+```bash
+pip install mikebalcic-confdiff
+```
+
+装完直接用命令名调用：
+
+```bash
+confdiff --help
+```
+
+也可以不用安装，直接把 `confdiff.py` 拷走用——它只依赖标准库。
+
 ## 为什么不用 `diff`
 
 `diff` 给你的是行级差异。配置文件的行级差异通常没法看：
